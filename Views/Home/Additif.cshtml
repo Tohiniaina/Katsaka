@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Additif";
+}
+<style>
+    #mo {
+        text-align: right;
+    }
+</style>
+<div class="text-center">
+    <h2 class="display-4">Rapport du Recolte</h2>
+    <div id="efficaciteZezika">
+        <h3>Vokatra Parcelle par Zezika</h3><br>
+        @for(int i=0; i<Model.Item1.Count; i++) {
+            <table>
+                <tr>
+                    <th>Zezika</th>
+                    <th>Quantité</th>
+                    <th>Pourcentage</th>
+                    <th>Vokatra</th>
+                </tr>
+                @for(int j=0; j<Model.Item1[i].Count; j++) {
+                    <tr>
+                        <td>Zezika @Model.Item2[j].getIdzezika()</td>
+                        <td>@Model.Item1[i][j].getQuantite() Kg</td>
+                        <td>@Math.Round(Model.Item1[i][j].getPourcentagezezika(),3) %</td>
+                        <td>@Math.Round(Model.Item1[i][j].getVokatra(),3) Kg</td>
+                    </tr>
+                }
+            </table>
+        }
+    </div>
+</div>

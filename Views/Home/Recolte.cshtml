@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Recolte";
+}
+
+<div class="text-center">
+    <h2 class="display-4">Recolte</h2>
+    <div id="form_culture">
+        <form action="/Insertion/InsertRecolte" method="post">
+            <div>
+                <label>Parcelle</label>
+                <select name="parcelle">
+                    @foreach (var Parcelle in Model) {
+                        <option value=@Parcelle.getIdparcelle()>@Parcelle.getNomparcelle()</option>
+                    }
+                </select>
+            </div>
+            <div>
+                <label>nombre tolany</label>
+                <input type="number" name="nbrtolany">
+            </div>
+            <div>
+                <label>Longueur tolany</label>
+                <input type="number" name="longueur">
+            </div>
+            <div>
+                <label>Poids Total</label>
+                <input type="text" name="poids">
+            </div>
+            <button type="submit">Recolter</button>
+        </form>
+    </div>
+</div>

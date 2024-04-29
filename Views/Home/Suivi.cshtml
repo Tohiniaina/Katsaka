@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Suivi de culture";
+}
+
+<div class="text-center">
+    <h2 class="display-4">Suivi</h2>
+    <div id="form_culture">
+        <form action="/Insertion/InsertSuivi" method="post">
+            <div>
+                <label>Parcelle</label>
+                <select name="parcelle">
+                    @foreach (var Parcelle in Model) {
+                        <option value=@Parcelle.getIdparcelle()>@Parcelle.getNomparcelle()</option>
+                    }
+                </select>
+            </div>
+            <div>
+                <label>Nombre tahony</label>
+                <input type="number" name="nbr_tahony">
+            </div>
+            <div>
+                <label>Nombre tolany</label>
+                <input type="number" name="nbr_tolany">
+            </div>
+            <div>
+                <label>Longueur tolany</label>
+                <input type="number" name="long_tolany">
+            </div>
+            <div>
+                <label>Niveau de verreté</label>
+                <input type="number" name="verrete">
+            </div>
+            <button type="submit">Suivre</button>
+        </form>
+    </div>
+</div>

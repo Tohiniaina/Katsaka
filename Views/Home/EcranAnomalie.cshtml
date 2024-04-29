@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="text-center">
+    <h2 class="display-4">Details anomalie</h2>
+    <div id="list_suivi">
+        <table>
+            <tr>
+                <th>id type anomalie</th>
+                <th>Motif</th>
+            </tr>
+            @foreach (var Anomalie in Model) {
+                <tr>
+                    <td>@Anomalie.getIdtypeanomalie()</td>
+                    <td>@Anomalie.getMotif()</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

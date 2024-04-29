@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Terrain";
+}
+
+<div class="text-center">
+    <h2 class="display-4">Terrain</h2>
+    <div id="form_culture">
+        <form action="/Home/Culture" method="post">
+            <div>
+                <label>Terrain</label>
+                <select name="terrain">
+                    @foreach (var Terrain in Model) {
+                        <option value=@Terrain.getIdterrain()>@Terrain.getIdterrain() : @Terrain.getMesure()</option>
+                    }
+                </select>
+            </div>
+            <button type="submit">Valider</button>
+        </form>
+    </div>
+</div>

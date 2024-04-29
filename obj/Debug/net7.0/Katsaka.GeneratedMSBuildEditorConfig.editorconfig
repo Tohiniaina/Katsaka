@@ -1,0 +1,101 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Katsaka
+build_property.RootNamespace = Katsaka
+build_property.ProjectDir = E:\s5\Prog\Katsaka\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\s5\Prog\Katsaka
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/s5/Prog/Katsaka/Views/Home/Additif.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRpdGlmLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/Home/AjoutZezika.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBam91dFplemlrYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/Home/Anomalie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbm9tYWxpZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/Home/ChoixTerrain.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaG9peFRlcnJhaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/Home/Culture.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDdWx0dXJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/Home/Depense.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXBlbnNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/Home/DetailSuivi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxTdWl2aS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/Home/EcranAnomalie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFY3JhbkFub21hbGllLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/Home/Rapport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSYXBwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/Home/Recolte.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWNvbHRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/Home/Resultat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXN1bHRhdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/Home/Suivi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdWl2aS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/Home/VoirSuivi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWb2lyU3VpdmkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/Home/Zezika.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxaZXppa2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/s5/Prog/Katsaka/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2bjv70grw9

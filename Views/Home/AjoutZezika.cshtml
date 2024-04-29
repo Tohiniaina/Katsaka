@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Ajout Zezika";
+}
+
+<div class="text-center">
+    <h2>Ajout Zezika sur un Parcelle</h2>
+    <form action="/Insertion/AjouterZezika" method="post">
+        <div>
+            <label>Parcelle</label>
+            <select name="parcelle">
+                @foreach (var Parcelle in Model.Item1) {
+                    <option value=@Parcelle.getIdparcelle()>@Parcelle.getNomparcelle()</option>
+                }
+            </select>
+        </div>  
+        <div>
+            <label>Type Zezika</label>
+            <select name="zezika">
+                @foreach (var Zezika in Model.Item2) {
+                    <option value=@Zezika.getIdzezika()>@Zezika.getNomzezika()</option>
+                }
+            </select>
+        </div>  
+        <div>
+            <label>Quantité (en Kg)</label>
+            <div>
+                <input type="text" name="qtezezika">
+            </div>
+        </div>
+        
+        <div>
+            <label>Prix Unitaire de Kg</label>
+            <div>
+                <input type="text" name="prixunitaire">
+            </div>
+        </div>
+        
+        <div>
+            <label>Date</label>
+            <div>
+                <input type="date" name="daty">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-outline-success">Cultiver</button>
+    </form>
+</div>

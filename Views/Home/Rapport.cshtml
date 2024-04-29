@@ -1,0 +1,72 @@
+@{
+    ViewData["Title"] = "Rapport";
+}
+<style>
+    #mo {
+        text-align: right;
+    }
+</style>
+<div class="text-center">
+    <h2 class="display-4">Rapport du Recolte</h2>
+    <div id="efficaciteZezika">
+        <h3>Classement efficacité Zezika</h3><br>
+        <table>
+            <tr>
+                <th>Classement</th>
+                <th>Zezika</th>
+                <th>Quantité</th>
+                <th>Vokatra</th>
+                <th>Rapport</th>
+            </tr>
+            @for(int i=1; i<Model.Item1.Count+1; i++) {
+                <tr>
+                    <td>@i</td>
+                    <td>@Model.Item1[i-1].getZezika().getNomzezika()</td>
+                    <td>@Model.Item1[i-1].getQuantite() Kg</td>
+                    <td>@Math.Round(Model.Item1[i-1].getVokatra(),3) Kg</td>
+                    <td>@Math.Round(Model.Item1[i-1].getRapport(),2)</td>
+                </tr>
+            }
+        </table><br><br>
+        <h3>Classement Qualité Vokatra par Composition Zezika</h3><br>
+        <table>
+            <tr>
+                <th>Classement</th>
+                @foreach (var Zezika in Model.Item2) {
+                    <th>@Zezika.getNomzezika()</th>
+                }
+                <th>Poids Unitaire Katsaka</th>
+            </tr>
+            @for(int i=1; i<Model.Item3.Count+1; i++) {
+                <tr>
+                    <td>@i</td>
+                    @for(int j=0; j<Model.Item3[i-1].Count; j++) {
+                        <td>@Math.Round(Model.Item3[i-1][j].getPourcentagezezika(),2) %</td>
+                    }
+                    <td>@Math.Round(Model.Item4[i-1].getRecolte().getPoidsunit(),2) Kg</td>
+                </tr>
+            }
+        </table><br><br>
+        <h3>Classement Rapport Qualité Prix Zezika</h3><br>
+        <table>
+            <tr>
+                <th>Classement</th>
+                <th>Zezika</th>
+                <th>Quantité</th>
+                <th>Vokatra</th>
+                <th>Prix Unitaire</th>
+                <th>Rapport</th>
+            </tr>
+            @for(int i=1; i<Model.Item5.Count+1; i++) {
+                <tr>
+                    <td>@i</td>
+                    <td>@Model.Item5[i-1].getZezika().getNomzezika()</td>
+                    <td>@Model.Item5[i-1].getQuantite() Kg</td>
+                    <td>@Math.Round(Model.Item5[i-1].getVokatra(),3) Kg</td>
+                    <td>@Model.Item5[i-1].getPrixmoyenne() Ar</td>
+                    <td>@Model.Item5[i-1].getRapportprix()</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

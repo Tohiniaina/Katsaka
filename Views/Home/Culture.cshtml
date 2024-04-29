@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "Culture";
+}
+
+<div class="text-center">
+    <h2 class="display-4">Culture</h2>
+    <div id="form_culture">
+        <form action="/Insertion/InsertCulture" method="post">
+            <div>
+                <label>Parcelle</label>
+                <select name="parcelle">
+                    @foreach (var Parcelle in Model) {
+                        <option value=@Parcelle.getIdparcelle()>@Parcelle.getNomparcelle()</option>
+                    }
+                </select>
+            </div>
+            <div>
+                <label>nombre de grain</label>
+                <input type="number" name="nbrtahony">
+            </div>
+            <div>
+                <label>Date de culture</label>
+                <input type="date" name="date_culture">
+            </div>
+            <button type="submit">Cultiver</button>
+        </form>
+    </div>
+</div>

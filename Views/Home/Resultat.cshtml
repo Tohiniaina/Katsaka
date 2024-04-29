@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Resultat";
+}
+
+<div class="text-center">
+    <h2 class="display-4">Resultat</h2>
+    <div id="list_suivi">
+        @if (Model.Item1.Count != 0) {
+            <h3>Anomalie Recolte</h3>
+            <table>
+                <tr>
+                    <th>id type anomalie</th>
+                    <th>Motif</th>
+                </tr>
+                @foreach (var Anomalie in Model.Item1) {
+                    <tr>
+                        <td>@Anomalie.getIdtypeanomalie()</td>
+                        <td>@Anomalie.getMotif()</td>
+                    </tr>
+                }
+            </table>
+        }
+    </div>
+    <div id="prevision">
+        @foreach (var Prevision in Model.Item2) {
+            <div class="resultParcelle">
+                <h2>@Prevision.getIdparcelle()</h2>
+                <p><strong>Nombre tolany : </strong>@Prevision.getNbrtolany()</p>
+                <p><strong>Longueur : </strong>@Prevision.getLongueur() cm</p>
+                <p><strong>Poids unitaire : </strong>@Math.Round(Prevision.getPoidsunit(),3) Kg</p>
+                <p><strong>Poids Total : </strong>@Math.Round(Prevision.getPoidstotal(),3) Kg</p>
+            </div>
+        }
+    </div>
+    <p id="poidstotal"><strong>Poids Total : </strong>@Math.Round(Model.Item3,3) Kg</p>
+</div>

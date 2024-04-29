@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Insepction";
+}
+
+<div class="text-center">
+    <h2 class="display-4">Inspection Suivi</h2>
+    <div id="form_culture">
+        <form action="/Home/DetailSuivi" method="post">
+            <div>
+                <label>Parcelle</label>
+                <select name="parcelle">
+                    @foreach (var Parcelle in Model) {
+                        <option value=@Parcelle.getIdparcelle()>@Parcelle.getNomparcelle() : @Parcelle.getMesure()</option>
+                    }
+                </select>
+            </div>
+            <button type="submit">Voir</button>
+        </form>
+    </div>
+</div>

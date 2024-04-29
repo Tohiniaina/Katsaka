@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="text-center">
+    <h2 class="display-4">Details Parcelle</h2>
+    <div id="list_suivi">
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Nombre Tahony</th>
+                <th>Nombre Tolany</th>
+                <th>Longueur</th>
+                <th>Niveau de verreté</th>
+            </tr>
+            @foreach (var Suivi in Model) {
+                <tr>
+                    <td>@Suivi.getDatesuivi()</td>
+                    <td>@Suivi.getNbrtahony()</td>
+                    <td>@Suivi.getNbrtolany()</td>
+                    <td>@Suivi.getLongueur()</td>
+                    <td>@Suivi.getNiveauverrete()</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
