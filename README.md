@@ -1,1 +1,2 @@
 # Katsaka
+Katsaka est une application de gestion de suivi de culture de maÏs qui permet de suivre en temps réel la culture(rapport mensuel, les anomalies, ...), de gerer les dépenses des besoins et surtout faire la prevision de recolte.
